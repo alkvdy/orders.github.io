@@ -1,0 +1,195 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container for main content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+#orderForm {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px; /* Constrain the form width */
+    margin: 0 auto; /* Center the form */
+}
+
+#orderForm label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#orderForm input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#orderForm button {
+    background-color: #28a745;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%; /* Ensure button spans the width of the form */
+}
+
+#orderForm button:hover {
+    background-color: #218838;
+}
+
+/* Panels */
+.hidden {
+    display: none;
+}
+
+#ordersPanel, #historyPanel {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* Submitted Orders */
+.order-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.order-item img {
+    max-width: 50%; /* Reduce the size of the image by 50% */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.order-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.doneButton, .deleteButton {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.doneButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.deleteButton {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.doneButton:hover {
+    background-color: #218838;
+}
+
+.deleteButton:hover {
+    background-color: #c82333;
+}
+
+/* History */
+.history-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.history-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.green-overlay {
+    background-color: rgba(0, 255, 0, 0.2); /* Light green overlay */
+}
+
+.red-overlay {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red overlay */
+}
+
+#clearHistoryButton {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#clearHistoryButton:hover {
+    background-color: #c82333;
+}
