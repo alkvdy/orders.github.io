@@ -1,3 +1,22 @@
+import { initializeApp } from "firebase/app";
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { getFirestore, collection, addDoc, getDocs, updateDoc, doc, deleteDoc } from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDRrHfSjIQNiZJMsa-Ycvr5t5aM69VV8co",
+  authDomain: "creative-handmade-orders.firebaseapp.com",
+  projectId: "creative-handmade-orders",
+  storageBucket: "creative-handmade-orders.appspot.com",
+  messagingSenderId: "783106711784",
+  appId: "1:783106711784:web:12104ec53b7b0dae82295d",
+  measurementId: "G-42467KSBWS"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+
 // Arrays to store orders and history
 let orders = [];
 let history = [];
